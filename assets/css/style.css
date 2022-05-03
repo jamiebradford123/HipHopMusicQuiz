@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     border: none;
+    box-sizing: border-box;
 }
 
 body {
@@ -22,7 +23,8 @@ body {
     background-color:rgb(72,72,72,0.9)
 }
 
-.game-area {
+/*inspired by the "Love Maths" project Code Institute*/
+.game-area { 
     background-color:rgb(72,72,72,0.9);
     box-sizing: border-box;
     width: 90%;
@@ -31,15 +33,18 @@ body {
     max-width: 800px;
     margin-left: auto;
     margin-right: auto;
-    padding: 1%; /* gives room inside the div so buttons dont touch the sides */
+    padding: 1%; 
     margin-top: 50px;
 }
 
 .game-area h2 {
     margin-top: 75px;
+    font-family: 'Arvo', serif;
     font-size: 3rem;
     font-style: italic;
 }
+
+/* play now and how to play buttons*/
 button {
     background-color: whitesmoke; 
     border: none;
@@ -51,4 +56,43 @@ button {
     display: inline-block;
     font-size: 2rem;
     margin-top: 100px;
+    border-radius: 14px;
 }
+/*shadow effect idea taken from w3schools*/
+button:hover {
+    background-color: black;
+    color: white;
+    box-shadow: 0 20px 28px 0 rgba(0,0,0,0.5), 0 17px 50px 0 rgba(0,0,0,0.19);
+  }
+
+/*footer*/
+footer {
+    color: #E6ECF0;
+    background-color:rgb(72,72,72,0.9);  
+    position: absolute;
+    bottom: 0;
+    left: 0; 
+    right: 0;
+    color: #fff;
+    width: 100vw;
+    height: auto;
+}
+footer h2 {
+    padding-top: 20px;
+}
+.social-networks {
+    text-align: center;
+}
+
+.social-networks > li {
+    display: inline;
+}
+
+.social-networks i {
+    font-size: 200%;
+    margin: 1%;
+    padding-left: 5%;
+    padding-right: 5%;
+    color: #E6ECF0;
+}
+
