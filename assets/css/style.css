@@ -9,7 +9,7 @@ body {
     background-repeat: no-repeat;
   /*ADD FONT FAMILY */
     font-family: 'Bebas Neue', sans-serif;
-    color: #445361;
+    color: #E6ECF0;
     text-align: center;
 }
 
@@ -19,12 +19,11 @@ body {
     font-size: 5rem;
     font-family: 'Bebas Neue', cursive;
     letter-spacing: 5px;
-    color: #E6ECF0;
-    background-color: #484848;
+    background-color:rgb(72,72,72,0.9)
 }
 
 .game-area {
-    background-color: #E6ECF0;
+    background-color:rgb(72,72,72,0.9);
     box-sizing: border-box;
     width: 90%;
     height: 65vh;
@@ -34,4 +33,22 @@ body {
     margin-right: auto;
     padding: 1%; /* gives room inside the div so buttons dont touch the sides */
     margin-top: 50px;
+}
+
+.game-area h2 {
+    margin-top: 75px;
+    font-size: 3rem;
+    font-style: italic;
+}
+button {
+    background-color: whitesmoke; 
+    border: none;
+    color: black;
+    margin: 20px;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 2rem;
+    margin-top: 100px;
 }
