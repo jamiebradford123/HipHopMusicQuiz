@@ -1,7 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Arvo&family=Bebas+Neue&display=swap');
+
 * {
     margin: 0;
     padding: 0;
-    border: none;
     box-sizing: border-box;
 }
 
@@ -10,7 +11,7 @@ body {
     background-repeat: no-repeat;
   /*ADD FONT FAMILY */
     font-family: 'Bebas Neue', sans-serif;
-    color: #E6ECF0;
+    color: white;
     text-align: center;
 }
 
@@ -26,7 +27,6 @@ body {
 /*inspired by the "Love Maths" project Code Institute*/
 .game-area { 
     background-color:rgb(72,72,72,0.9);
-    box-sizing: border-box;
     width: 90%;
     height: 65vh;
     max-height: 600px;
@@ -46,7 +46,7 @@ body {
 
 /* play now and how to play buttons*/
 button {
-    background-color: whitesmoke; 
+    background-color: white;
     border: none;
     color: black;
     margin: 20px;
@@ -63,17 +63,18 @@ button:hover {
     background-color: black;
     color: white;
     box-shadow: 0 20px 28px 0 rgba(0,0,0,0.5), 0 17px 50px 0 rgba(0,0,0,0.19);
+    transition: transform 150ms;
+    transform: scale(1.04);
   }
 
 /*footer*/
 footer {
-    color: #E6ECF0;
+    color: white;
     background-color:rgb(72,72,72,0.9);  
     position: absolute;
     bottom: 0;
     left: 0; 
     right: 0;
-    color: #fff;
     width: 100vw;
     height: auto;
 }
@@ -93,6 +94,6 @@ footer h2 {
     margin: 1%;
     padding-left: 5%;
     padding-right: 5%;
-    color: #E6ECF0;
+    color: white;
 }
 
