@@ -21,44 +21,51 @@
     <div class="game-area">    
         <!-- code from yt tutorial-->
         <div id="game" class="justify-center flex-column">
+            <!-- HUD for the game, question number and score-->
             <div id="hud">
-               <div class=".hud.item"> <!-- can also be called progress or whatever-->
-                    <p id="progressText" class="hud-prefix">
-                        question
-                    </p>
+                <!--Question section in Hud, display question number with bar-->
+               <div class=".hud.progress"> 
+                    <h2 id="progressHeading" class="hud-prefix">
+                        question 1/10
+                    </h2>
                     <div id="progressBar">
                         <div id="progressBarFull"></div>
                     </div>
                </div>
-               <div class="hud-item">
-                   <p class="hud-prefix">
+               <!-- Score section of the Hud-->
+               <div class="hud-current-score">
+                   <p id="scoreHeading" class="hud-prefix">
                        Score
                    </p>
-                   <h1 class="hud-main-text" id="score">
+                   <h2 class="hud-score-number" id="score">
                        0
-                   </h1>
+                   </h2>
                </div>
             </div>
+            <!--Where the question will be displayed-->
             <div id="question">What is the answer?</div>
-            <div class="choice-container">
-                <!--A-->
-                <p class="choice-prefix">A</p>
-                <p class="choice-text" data-number="1">Choice</p>
+
+            <!--answers-->
+            
+            <!--A-->
+            <div class="options-container">
+                <p class="options-prefix">A</p>
+                <p class="options-text" data-number="1">Choice 1</p>
             </div>
             <!--B-->
-            <div class="choice-container">
-                <p class="choice-prefix">B</p>
-                <p class="choice-text" data-number="2">Choice</p>
+            <div class="options-container">
+                <p class="options-prefix">B</p>
+                <p class="options-text" data-number="2">Choice 2</p>
             </div>
             <!--C-->
-            <div class="choice-container">
-                <p class="choice-prefix">C</p>
-                <p class="choice-text" data-number="3">Choice</p>
+            <div class="options-container">
+                <p class="options-prefix">C</p>
+                <p class="options-text" data-number="3">Choice 3</p>
             </div>
             <!--D-->
-            <div class="choice-container">
-                <p class="choice-prefix">D</p>
-                <p class="choice-text" data-number="4">Choice</p>
+            <div class="options-container">
+                <p class="options-prefix">D</p>
+                <p class="options-text" data-number="4">Choice 4</p>
             </div>
         </div>
           
@@ -82,7 +89,7 @@
         </ul>
     </footer>
     
-    <script src="assets/js/script.js"></script>
+    <script src="assets/js/game.js"></script>
     <script src="https://kit.fontawesome.com/a44a855ff8.js" crossorigin="anonymous"></script>
 </body>
 </html>
