@@ -98,7 +98,12 @@ footer h2 {
 }
 
 /*QUIZ CSS */
-.choice-container {
+
+/* HUD section */
+
+
+/* Answer section where options A,B,C,D will be displayed */
+.options-container {
     display: flex;
     margin-bottom: 30px;
     width: 100%;
@@ -108,11 +113,31 @@ footer h2 {
     color: black;
 }
 
-.choice-container:hover {
+.options-container:hover {
     cursor: pointer;
     box-shadow: 0 20px 28px 0 rgba(0,0,0,0.5), 0 17px 50px 0 rgba(0,0,0,0.19);
+    transition: transform 150ms;
+    transform: scale(1.04);
 }
 
+.options-prefix {
+    padding: 1rem 1.5rem;
+    color: black;
+}
+
+.options-text {
+    padding: 1rem;
+    width: 100%;
+}
+
+/*colour change for correct and incorrect answers */
+.correct {
+    background: green;
+}
+
+.incorrct {
+    background: red;
+}
 /* 
 .flex-column {
     display: flex;
