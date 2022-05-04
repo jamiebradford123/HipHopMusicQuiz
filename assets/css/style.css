@@ -37,7 +37,7 @@ body {
     margin-top: 50px;
 }
 
-.game-area h2 {
+.game-area p{
     margin-top: 75px;
     font-family: 'Arvo', serif;
     font-size: 3rem;
@@ -100,7 +100,36 @@ footer h2 {
 /*QUIZ CSS */
 
 /* HUD section */
+#hud {
+    display: flex;
+    justify-content: space-between;
+}
+.hud-prefix {
+    text-align: center;
+    color: red;
+}
 
+.hud-score-number {
+    color:green;
+    text-align: center;
+}
+
+#progressBar {
+    width: 400px;
+    height: 20px;
+    border: 2px solid rgb(11, 223, 36);
+    margin-top: 10px;
+    margin-bottom: 20px;
+    border-radius: 50px;
+    overflow: hidden;
+
+}
+
+#progressBarFull {
+    height: 100%;
+    background: rgb(11, 223, 36);
+    width: 0%;
+}
 
 /* Answer section where options A,B,C,D will be displayed */
 .options-container {
