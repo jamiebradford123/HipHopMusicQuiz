@@ -15,7 +15,7 @@ let availableQuestions = []
 
 let questions = [
     {
-        question:'Which 2 rappers collaborated to release the album - Watch the Throne',
+        question:'Which 2 rappers collaborated to release the album - \'Watch the Throne\'',
         choice1: 'Kanye West and Jay-Z',
         choice2: 'Tupac and Biggie',
         choice3: 'Drake and Future',
@@ -39,7 +39,7 @@ let questions = [
         answer: 3,
     },
     {
-        question:'What is the name of Drakes son?',
+        question:'What is the name of Drake\'s son?',
         choice1: 'Ja',
         choice2: 'Jimmy',
         choice3: 'Russell',
@@ -47,7 +47,7 @@ let questions = [
         answer: 4,
     },
     {
-        question:'Which one of these rappers are NOT in the group Migos?',
+        question:'Which one of these rappers are NOT in the group \'Migos\'?',
         choice1: 'Huncho',
         choice2: 'Quavo',
         choice3: 'Offset',
@@ -79,7 +79,7 @@ let questions = [
         answer: 3,
     },
     {
-        question:'Which Hip Hop artist was involved the the largely controversial Fyre festival which Netflix produced a documentary about in 2019?',
+        question:'Which Hip Hop artist was involved the the largely controversial \'Fyre\' festival which Netflix produced a documentary about in 2019?',
         choice1: 'Wiz Khalifa',
         choice2: 'Ja Rule',
         choice3: 'French Montana',
