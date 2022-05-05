@@ -11,10 +11,11 @@ let score= 0
 let questionCounter= 0 
 let availableQuestions = []
 
-//Questions
+//Questions- inspired by questions from https://www.capitalxtra.com/features/lists/hip-hop-pub-quiz-questions-best/ //
+
 let questions = [
     {
-        question:'Which 2 rappers collaborated to release the album - Watch the Throne'
+        question:'Which 2 rappers collaborated to release the album - Watch the Throne',
         choice1: 'Kanye West and Jay-Z',
         choice2: 'Tupac and Biggie',
         choice3: 'Drake and Future',
@@ -22,7 +23,7 @@ let questions = [
         answer: 1,
     },
     {
-        question:'Eminem starred in a film about his life, what was it called?'
+        question:'Eminem starred in a film about his life, what was it called?',
         choice1: 'The Rise',
         choice2: '8 Mile',
         choice3: 'Have To Make It',
@@ -92,5 +93,28 @@ let questions = [
         choice3: 'Friday',
         choice4: 'The Day',
         answer: 2,
-    },
+    }
 ]
+// Use caps is something is to remain fixed //
+
+const SCORE_POINTS = 1;
+const MAX_QUESTIONS = 10;
+
+startGame = () => {
+    questionCounter = 0;
+    score = 0;
+    availableQuestions = [...question]; //spread oporator to get the values from the questions //
+    getNewQuestion();
+}
+
+getNewQuestion = () => {
+    if (availableQuestions. length === 0 || questionCounter > MAX_QUESTIONS) {
+        localStorage.setItem('mostRecenrScore', score);
+        return window.location.assign('/end.html');  //this will essentiall keep track of the score //
+    }
+
+    questionCounter++
+    progressHeader.innerText = `Question ${questionCounter} of ${MAX_QUESTIONS}` //question 1 of 10, incrementing the first number //
+    progressBarFull.getElementsByClassName.width = `${(questionCounter/MAX_QUESTIONS) * 100}%` //Fill up progress bar by increments of 1/10th and calculating what question theyre on //
+
+}
