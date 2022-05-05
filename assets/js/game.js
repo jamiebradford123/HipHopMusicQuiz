@@ -1,5 +1,5 @@
 const question = document.querySelector('#question');
-const options = Array.from(document.getSelectorAll('.options-text'));
+const options = Array.from(document.querySelectorAll('.options-text'));
 const progressText = document.querySelector('progressHeading'); //may not work, we'll see
 const scoreText = document.querySelector('#score');
 const progressBarFull = document.querySelector('#progressBarFull');
@@ -103,7 +103,7 @@ const MAX_QUESTIONS = 10;
 startGame = () => {
     questionCounter = 0;
     score = 0;
-    availableQuestions = [...question]; //spread oporator to get the values from the questions //
+    availableQuestions = [...questions]; //spread oporator to get the values from the questions //
     getNewQuestion();
 }
 
@@ -114,7 +114,50 @@ getNewQuestion = () => {
     }
 
     questionCounter++
-    progressHeader.innerText = `Question ${questionCounter} of ${MAX_QUESTIONS}` //question 1 of 10, incrementing the first number //
-    progressBarFull.getElementsByClassName.width = `${(questionCounter/MAX_QUESTIONS) * 100}%` //Fill up progress bar by increments of 1/10th and calculating what question theyre on //
+    progressHeader.innerText = `Question ${questionCounter} of ${MAX_QUESTIONS}`; //question 1 of 10, incrementing the first number //
+    progressBarFull.getElementsByClassName.width = `${(questionCounter/MAX_QUESTIONS) * 100}%`; //Fill up progress bar by increments of 1/10th and calculating what question theyre on //
 
+    const questionsIndex = Math.floor(Math.random() * availableQuestions.length) //calculate value of question index //
+    currentQuestion = availableQuestions[questionsIndex] //Keep track of what question we are on //
+    question.innerText = currentQuestion.question
+
+    options.forEach(option => {
+        const number = options.dataset('number')
+        options.innerText = currentQuestion['choice' + number]  //choices may be plural or single, check here if script doesnt work //
+    })
+
+    availableQuestions.splice(questionsIndex, 1) 
+
+    acceptingAnswers = true
 }
+
+options.forEach(options => {
+    options.addEventListener('click', e => {
+        if(!acceptingAnswers) return
+
+        acceptingAnswers = false
+        const selectedOptions = e.target
+        const selectedAnswer = selectedOptions.dataset('number')
+
+        let classToApply = selectedAnswer == currentQuestion.answer ?'correct' : 'incorrect'; //toggle green if answer correct, red if wrong
+
+        if(classToApply === 'correct') {
+            incrementScore(SCORE_POINTS)
+        }
+
+        selectedOptions.parentElement.classList.add(classToApply)
+
+        setTimeout(() => {
+            selectedOptions.parentElement.classList.remove(classToApply)
+            getNewQuestion()
+
+        }, 1000)
+    })
+})
+
+incrementScore = num => {
+    score +=num
+    scoreText.innerText = score
+}
+
+startGame()
