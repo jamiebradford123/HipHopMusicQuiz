@@ -20,7 +20,11 @@
          <!-- Score area-->
         <div id="end">
             <h2 id="finalScore">0</h2>
-            <form class="end-form-container"></form>
+            <form class="end-form-container">
+                <p id="end-text">Enter Username To Be Added To The Leaderboard!</p>
+                <input type="text" name="name" id="username" placeholder="Enter Username" required>
+                <button id="saveScore" type="submit" onclick="saveHighScore(event)">Save</button>
+            </form>
         </div>
 
          <!-- Play again button?-->
@@ -29,7 +33,9 @@
           <a href="/quiz.html">
             <button>Play Again!</button>
           </a>
-          <button>How to play</button>
+          <a href="./index.html">
+            <button>Home Page</button>
+          </a>
         </div>
 
 

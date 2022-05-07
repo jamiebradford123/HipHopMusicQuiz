@@ -27,7 +27,6 @@ body {
 .game-area { 
     background-color:rgb(72,72,72,0.9);
     width: 90%;
-    height: 65vh;
     max-height: 600px;
     max-width: 800px;
     margin-left: auto;
@@ -133,7 +132,7 @@ footer h2 {
 
 #question {
     margin-bottom: 20px;
-    font-size: 50px;
+    font-size: 40px;
 }
 
 /* Answer section where options A,B,C,D will be displayed */
@@ -171,4 +170,28 @@ footer h2 {
 
 .incorrct {
     background: red;
+}
+
+/* End page */
+input {
+    width: 300px;
+    padding: 10px;
+    font-size: 20px;
+    border: none;
+    text-align: center;
+}
+
+#end-text {
+    margin-top: 25px;
+    font-family: 'Arvo', serif;
+    font-size: 30px;
+    font-style: italic;
+}
+
+#saveScore {
+    margin-top: 20px;
+}
+
+#finalScore {
+    font-size: 100px;
 }
