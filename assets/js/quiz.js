@@ -143,7 +143,7 @@ options.forEach(option => {
         //increase sore by one each time //
         if(classToApply === 'correct') {
             incrementScore(SCORE_POINTS)
-        } else(classToApply==='incorrect')
+        } 
 
         selectedOption.parentElement.classList.add(classToApply)
 
