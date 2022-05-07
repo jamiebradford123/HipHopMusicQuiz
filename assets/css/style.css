@@ -9,7 +9,6 @@
 body {
     background-image: url(../images/background-image1.jpg) ;
     background-repeat: no-repeat;
-  /*ADD FONT FAMILY */
     font-family: 'Bebas Neue', sans-serif;
     color: white;
     text-align: center;
@@ -138,7 +137,7 @@ footer h2 {
 }
 
 /* Answer section where options A,B,C,D will be displayed */
-.options-container {
+.option-container {
     display: flex;
     margin-bottom: 10px;
     width: 100%;
@@ -148,19 +147,19 @@ footer h2 {
     color: black;
 }
 
-.options-container:hover {
+.option-container:hover {
     cursor: pointer;
     box-shadow: 0 20px 28px 0 rgba(0,0,0,0.5), 0 17px 50px 0 rgba(0,0,0,0.19);
     transition: transform 150ms;
     transform: scale(1.04);
 }
 
-.options-prefix {
+.option-prefix {
     padding: 1rem 1.5rem;
     color: black;
 }
 
-.options-text {
+.option-text {
     padding: 1rem;
     width: 100%;
 }
@@ -173,18 +172,3 @@ footer h2 {
 .incorrct {
     background: red;
 }
-/* 
-.flex-column {
-    display: flex;
-    flex-direction: column;
-}
-
-.flex-center {
-    justify-content: center;
-    align-items: center;
-}
-
-.justify-center {
-    justify-content: center;
-}
-*/
