@@ -12,7 +12,6 @@
     <title>End Score</title>
 </head>
 <body>
-
     <!-- Heading-->
     <a href="./index.html">
         <h1 class="heading"><i class="fa-solid fa-music"></i> Hip-Hop Quiz <i class="fa-solid fa-music"></i></h1>
@@ -20,15 +19,9 @@
     <!-- Game Area-->
     <div class="game-area-end">
          <!-- Score area-->
-        <div id="end">
+         <p id="name-result"></p>
+            <h2>Final Score: </h2>
             <h2 id="finalScore">0</h2>
-            <form class="end-form-container">
-                <p id="end-text">Enter Username To Be Added To The Leaderboard!</p>
-                <input type="text" name="name" id="username" placeholder="Enter Username" required>
-                <button id="saveScore" type="submit" onclick="saveHighScore(event)">Save</button>
-            </form>
-        </div>
-
          <!-- Play again button?-->
         <div class="play-buttons">
           <!-- Two buttons, 'Play' and 'How to Play'-->
@@ -39,8 +32,6 @@
             <button>Home Page</button>
           </a>
         </div>
-
-
     </div>
    <!-- footer to provide links to share the quiz-->
     <!-- Structure taken from my Roe&Crown website from previous project. The links to social media were taken from https://www.sharelinkgenerator.com/-->
@@ -62,7 +53,7 @@
         </ul>
     </footer>
     
-    <script src="assets/js/script.js"></script>
+    <script src="assets/js/end.js"></script>
     <script src="https://kit.fontawesome.com/a44a855ff8.js" crossorigin="anonymous"></script>
 </body>
 </html>

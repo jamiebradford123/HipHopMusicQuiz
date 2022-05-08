@@ -1,34 +1,5 @@
-const username = document.querySelector('#username')
-const saveScore = document.querySelector('#saveScore')
-const finalScore = document.querySelector('#finalScore')
-const mostRecentScore = document.querySelector('#mostRecentScore')
+//help from https://www.youtube.com/watch?v=f4fB9Xg2JEY
 
-const highScores = JSON.parse(localStorage.getItem('highScores')) || []
-
-const MAX_HIGH_SCORES = 5
+const mostRecentScore = localStorage.getItem('mostRecentScore')
 
 finalScore.innerText = mostRecentScore
-
-username.addEventListener('keyup', () => {
-    saveScore=!username.value
-})
-
-saveHighScore = e => {
-    e.preventDefault()
-
-    const score = {
-        score: mostRecentScore,
-        name: username.value
-    }
-
-    highScores.push(score)
-
-    highScores.sort((a,b) => {
-        return b.score - a.score
-    })
-
-    highScores.splice(5)
-
-    localStorage.setItem('highScores', JSON.stringify(highScores))
-    window.location.assign('/')
-}

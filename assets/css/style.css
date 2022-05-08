@@ -50,6 +50,10 @@ form {
     margin: 10px;
 }
 
+#name-result {
+    font-size: 30px;
+}
+
 /* play now and how to play buttons*/
 button {
     background-color: white;
