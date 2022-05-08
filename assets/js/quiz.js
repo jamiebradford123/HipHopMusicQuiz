@@ -12,7 +12,7 @@ let questionCounter= 0
 let availableQuestions = []
 
 //Questions- inspired by questions from https://www.capitalxtra.com/features/lists/hip-hop-pub-quiz-questions-best/ //
-
+//code created with the help of the youtube tutorial https://www.youtube.com/watch?v=f4fB9Xg2JEY //
 let questions = [
     {
         question:'Which 2 rappers collaborated to release the album - \'Watch the Throne\'',
