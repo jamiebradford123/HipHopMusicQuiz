@@ -1,55 +1,58 @@
-https://www.capitalxtra.com/features/lists/hip-hop-pub-quiz-questions-best/
-
-https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_modal2
-
-https://www.youtube.com/watch?v=f4fB9Xg2JEY
-
 # Hip Hop Quiz
 
 The aim of this project is to build a Hip-Hop Music quiz using HTML, CSS and Javascript. For this project to be successful, it must provide a fun user expereince by having a responsive well working quiz. Achieving this means that all the functions work as they should, and clicking on one of the answers provides feedback.
 The intended target of this website is anyone who is a fan of Hip-Hop. This quiz provides them to test their knowledge and also discover some fun facts they may not have known. 
 
-![Responsice Mockup](media/love_maths_mockup.png)
+![Responsice Mockup](assets/images/)
 
 ## Features 
-
-
+Find below all the features which will be implimented on the quiz
 
 ### Existing Features
 
 - __Hip-Hop music quiz heading__
 
-  - Provides a large clear title at the top of the page which gives the user a clear indication of what this website is. Clicking on the main header will also take the user back the the home page
+  - Provides a large clear title at the top of the page which gives the user a clear indication of what this website is. 
+  - Clicking on the main header will also take the user back the the home page
 
-![Logo](media/love_maths_logo.png)
+![Header](media/love_maths_logo.png)
 
-- __The Game Area__
+- __The Game Area on the Home Page__
 
-  - This section will allow the user to play the maths game. The user will be able to easily see icons for addition,  subtraction, multiplication, and division games.
-  - The user will be able to select the type of maths game they will be playing by clicking on the different icons. 
+  - On the home page, this area will contain short introductionary text, and two buttons: Play Now and How to Play
+  - The Play Now button will take the user to the first question of the quiz
+  - The How to Play Button will display a Modal with some greater detail about the quiz- number of questions, how to answer etc.
 
-![Game](media/love_maths_icons.png)
+![Home Page](assets/images/main-page.png)
+![Modal](assets/images/How-to-play.png)
 
-- __The Question section__
+- __The Footer__
 
-  - The question section is where the user will be able to see the elementary arithmetic question to answer as part of the game. The user will be able answer the questions in the answer box provide
-  - The user will be able to submit their answer and a pop-up will make it known to the user if they answered correctly. 
+  - This section will contain links which will allow the user to share the Quiz link with friends on different social media platforms.
 
-![Question](media/love_maths_question.png)
+![Footer](assets/images/footer.png)
 
-- __The Score Area__
+- __The game area on the quiz page__
 
-  - This section will allow the user to see exactly how many correct and incorrect answers they have provided. 
+  - This section will allow the user to complete the quiz. In this area will contain the following:
+    - A question meter bar so users can see which number question they are on and have a visual indicator of how far along the quize they are
+    - A Score indicator which will show how many points (correct answers) the user has achieved, allowing them to track their performance
+    - The Question - 10 fixed questions which will display in a randomised order each time the quiz is opened. This is what the user will have to answer
+    - 4 answer options- A,B,C,D. The user will choose what they believe to be the correct answer. If the answer is correct, the box will display green and add 1 point to their socre. If they choose the incorrect answer then they box will display red and no point will be awarded. Displaying right and wrong answers in different colors allows the user to get clear instant feedback. 
 
-![score](media/love_maths_answer.png)
+![Game Area](assets/images/quiz-page.png)
 
-For some/all of your features, you may choose to reference the specific project files that implement them.
+- __End Page__
 
-In addition, you may also use this section to discuss plans for additional features to be implemented in the future:
+  - Once the quiz has been completed, user will be taken to this final page, which will display their final score and allow them to enter their username to save their score. 
+  - The two buttons on this page will either take the user to the start of the quiz so they can play again or take them back to the Home Page
+
+![End Page](assets/images/end-page.png)
 
 ### Features Left to Implement
 
-- Another feature idea
+- Timer- add a quiz timer to increase the difficulty of the quiz and reduce the likelihood of someone searching up the answers
+- Difficulty settings- provide the option of choosing Easy, Medium or Hard questions to make the quiz more interesting for the user and keep them on the site for longer
 
 ## Testing 
 
@@ -94,37 +97,25 @@ The live link can be found here - https://code-institute-org.github.io/love-math
 
 ## Credits 
 
+
+
+https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_modal2
+
+https://www.youtube.com/watch?v=f4fB9Xg2JEY
+
+https://www.sharelinkgenerator.com/
+
 In this section you need to reference where you got your content, media and extra help from. It is common practice to use code from other repositories and tutorials, however, it is important to be very specific about these sources to avoid plagiarism. 
 
 You can break the credits section up into Content and Media, depending on what you have included in your project. 
 
 ### Content 
-
+https://www.capitalxtra.com/features/lists/hip-hop-pub-quiz-questions-best/
 - The text for the Home page was taken from Wikipedia Article A
 - Instructions on how to implement form validation on the Sign Up page was taken from [Specific YouTube Tutorial](https://www.youtube.com/)
 - The icons in the footer were taken from [Font Awesome](https://fontawesome.com/)
 
 ### Media
-
+Photo by Stephen Niemeier from Pexels: https://www.pexels.com/photo/black-and-silver-mixing-board-63703/ - backgorund image
 - The photos used on the home and sign up page are from This Open Source site
 - The images used for the gallery page were taken from this other open source site
-
-
-Congratulations on completing your Readme, you have made another big stride in the direction of being a developer! 
-
-## Other General Project Advice
-
-Below you will find a couple of extra tips that may be helpful when completing your project. Remember that each of these projects will become part of your final portfolio so it’s important to allow enough time to showcase your best work! 
-
-- One of the most basic elements of keeping a healthy commit history is with the commit message. When getting started with your project, read through [this article](https://chris.beams.io/posts/git-commit/) by Chris Beams on How to Write  a Git Commit Message 
-  - Make sure to keep the messages in the imperative mood 
-
-- When naming the files in your project directory, make sure to consider meaningful naming of files, point to specific names and sections of content.
-  - For example, instead of naming an image used ‘image1.png’ consider naming it ‘landing_page_img.png’. This will ensure that there are clear file paths kept. 
-
-- Do some extra research on good and bad coding practices, there are a handful of useful articles to read, consider reviewing the following list when getting started:
-  - [Writing Your Best Code](https://learn.shayhowe.com/html-css/writing-your-best-code/)
-  - [HTML & CSS Coding Best Practices](https://medium.com/@inceptiondj.info/html-css-coding-best-practice-fadb9870a00f)
-  - [Google HTML/CSS Style Guide](https://google.github.io/styleguide/htmlcssguide.html#General)
-
-Getting started with your Portfolio Projects can be daunting, planning your project can make it a lot easier to tackle, take small steps to reach the final outcome and enjoy the process! 
