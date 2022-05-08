@@ -241,6 +241,7 @@ input {
 
 /* For larger to medium screens size from 1200px wide and down */
 @media screen and (max-width: 1200px) {
+/* Home Page */   
     .heading {
         height: 50px;
         font-size: 3rem;
@@ -260,11 +261,51 @@ input {
         font-size: 1rem;
         font-style: italic;
     }
-
-    /* For medium screen sizes from 950px wide and down */
-@media screen and (max-width: 1500px) {
-
-
+    .modal { 
+        position: none;
+      }
+      .modal-content {
+        font-size: 40px;
+      }
+    }
 
 @media screen and (max-width: 800px) {
+/* Home Page */   
+.heading {
+    height: 50px;
+    font-size: 2rem;
+
+}
+footer {
+    height: 80px;
+}
+.social-networks i {
+    font-size: 100%;
+}
+.game-area { 
+    max-height: 500px;
+}
+#intro{
+    margin-top: 30px;
+    font-size: 1rem;
+    font-style: italic;
+}
+.modal { 
+    position: none;
+}
+  .modal-content {
+    font-size: 20px;
+}
+button {
+    
+    margin: 20px;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1rem;
+    margin-top: 25px;
+    border-radius: 14px;
+}
+}
 
