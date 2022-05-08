@@ -146,7 +146,7 @@ footer h2 {
     color: white;
 }
 
-/*QUIZ CSS */
+/*QUIZ CSS*/
 .game-area-quiz { 
     background-color:rgb(72,72,72,0.9);
     width: 90%;
@@ -157,7 +157,7 @@ footer h2 {
     padding: 1%; 
     margin-top: 50px;
 }
-/* HUD section */
+/* HUD section - code created with the help of the youtube tutorial https://www.youtube.com/watch?v=f4fB9Xg2JEY */
 #hud {
     display: flex;
     justify-content: space-between;
@@ -168,7 +168,7 @@ footer h2 {
 }
 
 .hud-score-number {
-    color:green;
+    color:rgb(11, 223, 36);
     text-align: center;
     font-size: 30px;
 }
