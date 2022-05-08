@@ -28,7 +28,7 @@ a {
     color: white;
 }
 /*inspired by the "Love Maths" project Code Institute*/
-.game-area { 
+.game-area-home { 
     background-color:rgb(72,72,72,0.9);
     width: 90%;
     max-height: 600px;
@@ -139,7 +139,16 @@ footer h2 {
 }
 
 /*QUIZ CSS */
-
+.game-area-quiz { 
+    background-color:rgb(72,72,72,0.9);
+    width: 90%;
+    max-height: 900px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1%; 
+    margin-top: 50px;
+}
 /* HUD section */
 #hud {
     display: flex;
@@ -216,6 +225,16 @@ footer h2 {
 }
 
 /* End page */
+.game-area-end { 
+    background-color:rgb(72,72,72,0.9);
+    width: 90%;
+    max-height: 500px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1%; 
+    margin-top: 50px;
+}
 input {
     width: 300px;
     padding: 10px;
@@ -267,6 +286,15 @@ input {
       .modal-content {
         font-size: 40px;
       }
+/*endpage*/
+.game-area-end { 
+    max-height: 400px;
+    max-width: 800px;
+    margin-top: 30px;
+}
+#finalScore {
+    font-size: 50px;
+}
     }
 
 @media screen and (max-width: 800px) {
@@ -296,16 +324,30 @@ footer {
   .modal-content {
     font-size: 20px;
 }
+
 button {
-    
-    margin: 20px;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
     font-size: 1rem;
-    margin-top: 25px;
+    margin-top: 5px;
     border-radius: 14px;
+    height: 40px;
+}
+
+#question {
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+#end-text {
+    margin-top: 10px;
+    font-size: 15px;
+}
+
+input {
+    width: 200px;
+    margin-top: 10px;
+    font-size: 10px;
+    border: none;
+    text-align: center;
 }
 }
 
