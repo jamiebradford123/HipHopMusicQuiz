@@ -1,3 +1,15 @@
+// Name form code was written with the help of the "Getting Form Values Challenge"
+
+function getFormDetails(event) {
+  event.preventDefault();
+  
+  let name = document.getElementById('name')
+  
+  document.getElementById('name-result').textContent = "Welcome " + name.value;
+}
+let nameForm = document.getElementById("score-signup");
+nameForm.addEventListener('submit',getFormDetails)
+
 // Model taken from - https://www.w3schools.com/howto/howto_css_modals.asp 
 var modal = document.getElementById("myModal");
 

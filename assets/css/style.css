@@ -46,6 +46,10 @@ a {
     font-style: italic;
 }
 
+form {
+    margin: 10px;
+}
+
 /* play now and how to play buttons*/
 button {
     background-color: white;
