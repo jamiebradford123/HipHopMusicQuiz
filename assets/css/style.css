@@ -40,9 +40,9 @@ a {
 }
 
 #intro{
-    margin-top: 75px;
+    margin-top: 30px;
     font-family: 'Arvo', serif;
-    font-size: 3rem;
+    font-size: 2rem;
     font-style: italic;
 }
 
@@ -57,7 +57,7 @@ button {
     text-decoration: none;
     display: inline-block;
     font-size: 2rem;
-    margin-top: 100px;
+    margin-top: 50px;
     border-radius: 14px;
 }
 /*shadow effect idea taken from w3schools*/
@@ -118,7 +118,6 @@ footer {
     left: 0; 
     right: 0;
     width: 100vw;
-    height: auto;
 }
 footer h2 {
     padding-top: 20px;
@@ -239,3 +238,33 @@ input {
 #finalScore {
     font-size: 100px;
 }
+
+/* For larger to medium screens size from 1200px wide and down */
+@media screen and (max-width: 1200px) {
+    .heading {
+        height: 50px;
+        font-size: 3rem;
+
+    }
+    footer {
+        height: 100px;
+    }
+    .social-networks i {
+        font-size: 100%;
+    }
+    .game-area { 
+        max-height: 400px;
+    }
+    #intro{
+        margin-top: 30px;
+        font-size: 1rem;
+        font-style: italic;
+    }
+
+    /* For medium screen sizes from 950px wide and down */
+@media screen and (max-width: 1500px) {
+
+
+
+@media screen and (max-width: 800px) {
+
