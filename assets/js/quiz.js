@@ -1,15 +1,15 @@
+//code created with the help of the youtube tutorial https://www.youtube.com/watch?v=f4fB9Xg2JEY //
 const question = document.querySelector('#question');
 const options = Array.from(document.querySelectorAll('.option-text'));
-const progressText = document.querySelector('progressHeading');
 const scoreText = document.querySelector('#score');
 const progressBarFull = document.querySelector('#progressBarFull');
 
 let currentQuestion = {};
 let acceptingAnswers= true;
 //Score and question counter start at 0
-let score= 0
-let questionCounter= 0 
-let availableQuestions = []
+let score= 0;
+let questionCounter= 0 ;
+let availableQuestions = [];
 
 //Questions- inspired by questions from https://www.capitalxtra.com/features/lists/hip-hop-pub-quiz-questions-best/ //
 //code created with the help of the youtube tutorial https://www.youtube.com/watch?v=f4fB9Xg2JEY //
@@ -94,18 +94,18 @@ let questions = [
         option4: 'The Day',
         answer: 2,
     }
-]
+];
 // Use caps is something is to remain fixed //
 
 const SCORE_POINTS = 1;
 const MAX_QUESTIONS = 10;
 
-startGame = () => {
+let startGame = () => {
     questionCounter = 0;
     score = 0;
     availableQuestions = [...questions]; //spread oporator to get the values from the questions //
     getNewQuestion();
-}
+};
 
 getNewQuestion = () => {
     if (availableQuestions.length === 0 || questionCounter > MAX_QUESTIONS) {
@@ -117,47 +117,47 @@ getNewQuestion = () => {
     progressHeading.innerText = `Question ${questionCounter} of ${MAX_QUESTIONS}`; //question 1 of 10, incrementing the first number //
     progressBarFull.style.width = `${(questionCounter/MAX_QUESTIONS) * 100}%`; //Fill up progress bar by increments of 1/10th and calculating what question theyre on //
 
-    const questionsIndex = Math.floor(Math.random() * availableQuestions.length) //calculate value of question index //
-    currentQuestion = availableQuestions[questionsIndex] //Keep track of what question we are on //
-    question.innerText = currentQuestion.question
+    const questionsIndex = Math.floor(Math.random() * availableQuestions.length); //calculate value of question index //
+    currentQuestion = availableQuestions[questionsIndex]; //Keep track of what question we are on //
+    question.innerText = currentQuestion.question;
 
     options.forEach(option => {
-        const number = option.dataset['number']
-        option.innerText = currentQuestion['option' + number]  
-    })
+        const number = option.dataset['number'];
+        option.innerText = currentQuestion['option' + number];
+    });
 
-    availableQuestions.splice(questionsIndex, 1) 
+    availableQuestions.splice(questionsIndex, 1);
 
-    acceptingAnswers = true
-}
+    acceptingAnswers = true;
+};
 
 options.forEach(option => {
     option.addEventListener('click', e => {
-        if(!acceptingAnswers) return
+        if(!acceptingAnswers) return;
 
-        acceptingAnswers = false
-        const selectedOption = e.target
-        const selectedAnswer = selectedOption.dataset['number']
+        acceptingAnswers = false;
+        const selectedOption = e.target;
+        const selectedAnswer = selectedOption.dataset['number'];
 
         let classToApply = selectedAnswer == currentQuestion.answer ? 'correct' : 'incorrect'; //toggle green if answer correct, red if wrong
         //increase sore by one each time //
         if(classToApply === 'correct') {
-            incrementScore(SCORE_POINTS)
+            incrementScore(SCORE_POINTS);
         } 
 
-        selectedOption.parentElement.classList.add(classToApply)
+        selectedOption.parentElement.classList.add(classToApply);
 
         setTimeout(() => {
-            selectedOption.parentElement.classList.remove(classToApply)
-            getNewQuestion()
+            selectedOption.parentElement.classList.remove(classToApply);
+            getNewQuestion();
 
-        }, 1000)
-    })
-})
+        }, 1000);
+    });
+});
 
 incrementScore = num => {
-    score +=num
-    scoreText.innerText = score
-}
+    score +=num;
+    scoreText.innerText = score;
+};
 
-startGame()
+startGame();
