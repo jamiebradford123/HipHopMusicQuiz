@@ -3,7 +3,7 @@
 The aim of this project is to build a Hip-Hop Music quiz using HTML, CSS and Javascript. For this project to be successful, it must provide a fun user expereince by having a responsive well working quiz. Achieving this means that all the functions work as they should, and clicking on one of the answers provides feedback.
 The intended target of this website is anyone who is a fan of Hip-Hop. This quiz provides them to test their knowledge and also discover some fun facts they may not have known. 
 
-![Responsice Mockup](assets/images/)
+![Responsice Mockup](assets/images/preview.png)
 
 ## Features 
 Find below all the features which will be implimented on the quiz
@@ -15,16 +15,17 @@ Find below all the features which will be implimented on the quiz
   - Provides a large clear title at the top of the page which gives the user a clear indication of what this website is. 
   - Clicking on the main header will also take the user back the the home page
 
-![Header](media/love_maths_logo.png)
+![Header](assets/images/header.png)
 
 - __The Game Area on the Home Page__
 
-  - On the home page, this area will contain short introductionary text, and two buttons: Play Now and How to Play
+  - On the home page, this area will contain short introductionary text, an option to provide a username and two buttons: Play Now and How to Play
+  - A form to allow the user to enter their username, which will pop up a personal welcome message
   - The Play Now button will take the user to the first question of the quiz
   - The How to Play Button will display a Modal with some greater detail about the quiz- number of questions, how to answer etc.
 
 ![Home Page](assets/images/main-page.png)
-![Modal](assets/images/How-to-play.png)
+![Modal](assets/images/how-to-play.png)
 
 - __The Footer__
 
@@ -53,6 +54,7 @@ Find below all the features which will be implimented on the quiz
 
 - Timer- add a quiz timer to increase the difficulty of the quiz and reduce the likelihood of someone searching up the answers
 - Difficulty settings- provide the option of choosing Easy, Medium or Hard questions to make the quiz more interesting for the user and keep them on the site for longer
+- Leaderboard - allowing users to compare their scores with others on the site
 
 ## Testing 
 
