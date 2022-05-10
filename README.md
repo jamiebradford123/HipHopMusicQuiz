@@ -58,17 +58,6 @@ Find below all the features which will be implimented on the quiz
 
 ## Testing 
 
-In this section, you need to convince the assessor that you have conducted enough testing to legitimately believe that the site works well. Essentially, in this part you will want to go over all of your project’s features and ensure that they all work as intended, with the project providing an easy and straightforward way for the users to achieve their goals.
-
-In addition, you should mention in this section how your project looks and works on different browsers and screen sizes.
-
-You should also mention in this section any interesting bugs or problems you discovered during your testing, even if you haven't addressed them yet.
-
-If this section grows too long, you may want to split it off into a separate file and link to it from here.
-
-
-### Validator Testing 
-
 - HTML
     - No errors were returned when passing through the official [W3C validator](https://validator.w3.org/nu/?doc=https%3A%2F%2Fjamiebradford123.github.io%2FHipHopMusicQuiz%2F)
     
@@ -81,10 +70,13 @@ If this section grows too long, you may want to split it off into a separate fil
       - Function with the largest signature take 1 arguments, while the median is 1.
       - Largest function has 12 statements in it, while the median is 2.
       - The most complex function has a cyclomatic complexity value of 4 while the median is 1.
+- Lighthouse test
+    - ![Home Page](assets/images/lighthouse-homepage.png)
+    - ![Quiz Page](assets/images/lighthouse-quiz.png)
+    - ![End page](assets/images/lighthouse-endpage.png)
+
 
 ## Deployment
- 
-
 - The site was deployed to GitHub pages. The steps to deploy are as follows: 
   - In the GitHub repository, navigate to the Settings tab 
   - On the left hand side there is a pages tab
@@ -93,25 +85,11 @@ If this section grows too long, you may want to split it off into a separate fil
 The live link can be found here - https://jamiebradford123.github.io/HipHopMusicQuiz/
 
 ## Credits 
+- Content for the quiz was taken from: https://www.capitalxtra.com/features/lists/hip-hop-pub-quiz-questions-best/
+- Code to help create the modal was taken from: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_modal2
+- Instructions on how to create a wroking quiz was taken from: https://www.youtube.com/watch?v=f4fB9Xg2JEY
+- The icons in the header were taken from [Font Awesome](https://fontawesome.com/)
+- Links in the footer to share the link to the website was from: https://www.sharelinkgenerator.com/
+- Code to allow user to add their username assisted using this module on Code Institute: https://learn.codeinstitute.net/courses/course-v1:CodeInstitute+JSE_PAGPPF+2021_Q2/courseware/30137de05cd847d1a6b6d2c7338c4655/c3bd296fe9d643af86e76e830e1470dd/
+- Background image is a Photo by Stephen Niemeier from Pexels: https://www.pexels.com/photo/black-and-silver-mixing-board-63703/
 
-
-
-https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_modal2
-
-https://www.youtube.com/watch?v=f4fB9Xg2JEY
-
-https://www.sharelinkgenerator.com/
-
-https://learn.codeinstitute.net/courses/course-v1:CodeInstitute+JSE_PAGPPF+2021_Q2/courseware/30137de05cd847d1a6b6d2c7338c4655/c3bd296fe9d643af86e76e830e1470dd/
-
-
-### Content 
-https://www.capitalxtra.com/features/lists/hip-hop-pub-quiz-questions-best/
-- The text for the Home page was taken from Wikipedia Article A
-- Instructions on how to implement form validation on the Sign Up page was taken from [Specific YouTube Tutorial](https://www.youtube.com/)
-- The icons in the footer were taken from [Font Awesome](https://fontawesome.com/)
-
-### Media
-Photo by Stephen Niemeier from Pexels: https://www.pexels.com/photo/black-and-silver-mixing-board-63703/ - backgorund image
-- The photos used on the home and sign up page are from This Open Source site
-- The images used for the gallery page were taken from this other open source site
