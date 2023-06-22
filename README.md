@@ -1,5 +1,9 @@
 # Hip Hop Quiz
 
+TO RUN LOCALLY, RUN THE FOLLOWING IN THE TERMINAL:
+python3 -m http.server
+
+
 The aim of this project is to build a Hip-Hop Music quiz using HTML, CSS and Javascript. For this project to be successful, it must provide a fun user expereince by having a responsive well working quiz. Achieving this means that all the functions work as they should, and clicking on one of the answers provides feedback.
 The intended target of this website is anyone who is a fan of Hip-Hop. This quiz provides them to test their knowledge and also discover some fun facts they may not have known. 
 
